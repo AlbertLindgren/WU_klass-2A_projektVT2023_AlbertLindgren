@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    font-family: 'GFS Didot', serif, Verdana, Geneva, Tahoma, sans-serif;
+    max-height: fit-content;
+}
+
+p {
+    text-overflow: ellipsis;
+    max-width: 500px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+a {
+    
+    color: black;
+}
+
+#parent_grid_wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 1fr 50px;
+
+    grid-template-areas: 
+    "na"
+    "ce"
+    "fo";
+    background-color: rgb(231, 231, 198);
+}
+
+nav {
+    grid-area: na;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(231, 231, 198);
+}
+
+nav a {
+    font-size: 25px;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+footer {
+    grid-area: fo;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#center_section {
+    grid-area: ce;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+}
+
+#child_grid_wrapper1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "we"
+    "ne"
+    "sh";
+}
+
+#welcome {
+    grid-area: we;
+
+}
+
+#child_grid_wrapper1 h1 {
+    text-align: center;
+}
+
+#news {
+    grid-area: ne;
+}
+
+#latest_news a {
+    /* Fix center, flex */
+}
+
+#shop {
+    grid-area: sh;
+}
