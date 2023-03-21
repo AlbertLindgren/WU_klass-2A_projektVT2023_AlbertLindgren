@@ -68,6 +68,7 @@ nav a {
     top: 50px;
     right: 0px;
     background-color: rgb(231, 231, 198);
+    z-index: 10;
 }
 
 #nav_links li {
@@ -102,8 +103,6 @@ nav a {
    display: none;
 }
 
-
-
 footer {
     grid-area: fo;
     display: flex;
@@ -115,6 +114,7 @@ footer {
     display: flex;
     justify-content: center;
     background-color: rgb(255, 255, 255);
+    height: 100vh;
 }
 
 #child_grid_wrapper1 {
@@ -124,11 +124,19 @@ footer {
     "we"
     "ne"
     "sh";
+
+    font-size: 1.1rem;
 }
 
 #welcome {
     grid-area: we;
+}
 
+#img_mimer {
+    width: 500px;
+    height: auto;
+    border-radius: 5%;
+    margin-top: 5px;  
 }
 
 #child_grid_wrapper1 h1 {
@@ -153,8 +161,6 @@ footer {
     transform: translateY(0px);
 }
 
-
-
 #child_grid_wrapper2 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
@@ -178,8 +184,8 @@ footer {
     grid-area: "ar3";
 }
 
-.news_article p{
-    font-size: 0.9rem;
+.news_article h2 {
+    font-size: 1.2rem;
 }
 
 #img_books {
@@ -195,26 +201,31 @@ footer {
 #child_grid_wrapper3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 180px 180px 180px;
     grid-template-areas: 
     "it1 it2 it3"
     "it4 it5 it6"
-    "it7 it8 it9";
+    "it7 it8 it9"
+    "it10 it11 it12"
+    "it13 it14 it15";
 }
 
+.page3 #center_section {
+    height: auto;
+  }
+
+  
 .shop_item {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
-    margin-top: 10px;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-right: 10px;
     border: 4mm ridge rgba(147, 88, 36, 0.6);
+    height: 190px;
 }
 
 .shop_item p {
     text-align: center;
-    
 }
 
 .shop_item h2 {
@@ -223,58 +234,87 @@ footer {
 
 #produkt1 {
     grid-area: it1;
+    margin-top: 10px;
 }
-
 
 #produkt2 {
     grid-area: it2;
+    margin-top: 10px;
 }
-
 
 #produkt3 {
     grid-area: it3;
+    margin-top: 10px;
 }
-
 
 #produkt4 {
     grid-area: it4;
+    margin-top: 25px;
 }
-
 
 #produkt5 {
     grid-area: it5;
+    margin-top: 25px;
 }
-
 
 #produkt6 {
     grid-area: it6;
+    margin-top: 25px;
 }
-
 
 #produkt7 {
     grid-area: it7;
+    margin-top: 40px;
 }
-
 
 #produkt8 {
     grid-area: it8;
+    margin-top: 40px;
 }
-
 
 #produkt9 {
     grid-area: it9;
+    margin-top: 40px;
+}
+
+#produkt10 {
+    grid-area: it10;
+    margin-top: 55px;
+}
+
+#produkt11 {
+    grid-area: it11;
+    margin-top: 55px;
+}
+
+#produkt12 {
+    grid-area: it12;
+    margin-top: 55px;
+}
+
+#produkt13 {
+    grid-area: it13;
+    margin-top: 5px;
+    margin-bottom: 10px;   
+}
+
+#produkt14 {
+    grid-area: it14;
+    margin-top: 5px;
+    margin-bottom: 10px; 
+}
+
+#produkt15 {
+    grid-area: it15;
+    margin-top: 5px;
+    margin-bottom: 10px; 
 }
 
 .book_generic {
-    width: 150px;
+    width: 180px;
     height: auto;
 }
 
-.black_line {
-    background-color: black;
-    width: 150px;
-    height: 2px;
-}
 
 #grid_wrapper_4 {
     display: grid;
@@ -286,15 +326,26 @@ footer {
 
 #kontakt_uppgifter {
     grid-area: ko;
-    margin-bottom: 324px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 110px;
+    font-size: 1.2rem;
 }
 
+#img_kontakt {
+    width: 350px;
+}
+
+#kontakt_text {
+    position: relative;
+    right: 30px;
+}
 
 /* For smaller screens: */
 @media screen and (max-width: 800px) {
     * {
         margin-left: 1px;
-        font-size: large;
+        /* font-size: 1.1rem; */
     }
     #burger {
         display: block;
@@ -308,12 +359,12 @@ footer {
     
     .burger_toggle #burger_line_1 {
         /* transform: rotate(-45deg) translate(-5px, 6px); */
-        transform: rotate(-45deg) translate(-9px, 6px); 
+        transform: rotate(-49deg) translate(-9px, 8px); 
     }
     
     .burger_toggle #burger_line_3 {
         /* transform: rotate(45deg) translate(-5px, -6px); */
-        transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(49deg) translate(-5px, -6px);
     }
 
     #parent_grid_wrapper1 {
@@ -349,6 +400,7 @@ footer {
 
     #center_section {
         right: 500px;
+        height: auto;
     }
 
     /* Adjust shop contents */
@@ -364,7 +416,103 @@ footer {
         "it6"
         "it7"
         "it8" 
-        "it9";
+        "it9"
+        "it10"
+        "it11"
+        "it12"
+        "it13"
+        "it14"
+        "it15";
     }
 
+    #kontakt_uppgifter {
+        height: 100vh;
+        margin-left: 100px;
+    }
+
+    .news_article {
+        font-size: large;
+    }
+
+    .shop_item {
+        margin-right: 10px;
+    }
+
+    #produkt1 {
+        grid-area: it1;
+        margin-top: 10px;
+    }
+    
+    #produkt2 {
+        grid-area: it2;
+        margin-top: 10px;
+    }
+    
+    #produkt3 {
+        grid-area: it3;
+        margin-top: 10px;
+    }
+    
+    #produkt4 {
+        grid-area: it4;
+        margin-top: 10px;
+    }
+    
+    #produkt5 {
+        grid-area: it5;
+        margin-top: 10px;
+    }
+    
+    #produkt6 {
+        grid-area: it6;
+        margin-top: 10px;
+    }
+    
+    #produkt7 {
+        grid-area: it7;
+        margin-top: 10px;
+    }
+    
+    #produkt8 {
+        grid-area: it8;
+        margin-top: 10px;
+    }
+    
+    #produkt9 {
+        grid-area: it9;
+        margin-top: 10px;
+    }
+    
+    #produkt10 {
+        grid-area: it10;
+        margin-top: 10px;
+    }
+    
+    #produkt11 {
+        grid-area: it11;
+        margin-top: 10px;
+    }
+    
+    #produkt12 {
+        grid-area: it12;
+        margin-top: 10px;
+    }
+    
+    #produkt13 {
+        grid-area: it13;
+        margin-top: 10px;
+        margin-bottom: 0px;   
+    }
+    
+    #produkt14 {
+        grid-area: it14;
+        margin-top: 10px;
+        margin-bottom: 0px; 
+    }
+    
+    #produkt15 {
+        grid-area: it15;
+        margin-top: 10px;
+        margin-bottom: 10px; 
+    }
 }
