@@ -330,6 +330,7 @@ footer {
     flex-direction: column;
     margin-left: 110px;
     font-size: 1.2rem;
+    margin-top: 5px;
 }
 
 #img_kontakt {
