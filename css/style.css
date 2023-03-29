@@ -114,7 +114,7 @@ footer {
     display: flex;
     justify-content: center;
     background-color: rgb(255, 255, 255);
-    height: 100vh;
+    height: auto;
 }
 
 #child_grid_wrapper1 {
@@ -213,6 +213,10 @@ footer {
 .page3 #center_section {
     height: auto;
   }
+
+.page4 #center_section {
+    height: 100vh;
+}
 
   
 .shop_item {
@@ -315,7 +319,6 @@ footer {
     height: auto;
 }
 
-
 #grid_wrapper_4 {
     display: grid;
     grid-template-columns: 1fr;
@@ -328,13 +331,13 @@ footer {
     grid-area: ko;
     display: flex;
     flex-direction: column;
-    margin-left: 110px;
+    margin-left: 200px;
     font-size: 1.2rem;
     margin-top: 5px;
 }
 
 #img_kontakt {
-    width: 350px;
+    width: 300px;
 }
 
 #kontakt_text {
@@ -388,7 +391,7 @@ footer {
         width: 135px;
         background-color: rgb(231, 231, 198);
         justify-content: space-around;
-        align-items:enter;
+        align-items: center;
         position: absolute;
         top: 85px;
         top: -500px;
@@ -517,3 +520,20 @@ footer {
         margin-bottom: 10px; 
     }
 }
+
+
+
+
+
+/* #parent_grid_wrapper1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 40px 1fr 50px;
+
+    grid-template-areas:
+    "he" 
+    "na"
+    "ce"
+    "fo";
+    background-color: rgb(231, 231, 198);
+} */
