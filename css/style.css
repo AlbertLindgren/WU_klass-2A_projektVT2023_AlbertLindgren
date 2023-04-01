@@ -109,6 +109,11 @@ footer {
     justify-content: space-evenly;
 }
 
+#img_fb {
+    width: 100;
+    height: auto;
+}
+
 #center_section {
     grid-area: ce;
     display: flex;
@@ -431,7 +436,7 @@ footer {
 
     #kontakt_uppgifter {
         height: 100vh;
-        margin-left: 100px;
+        margin-left: 160px;
     }
 
     .news_article {
@@ -518,6 +523,14 @@ footer {
         grid-area: it15;
         margin-top: 10px;
         margin-bottom: 10px; 
+    }
+
+    #img_mimer {
+        width: 400px;
+    }
+
+    #img_fb {
+        width: 50px;
     }
 }
 
