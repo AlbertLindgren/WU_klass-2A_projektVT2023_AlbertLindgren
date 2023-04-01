@@ -436,7 +436,8 @@ footer {
 
     #kontakt_uppgifter {
         height: 100vh;
-        margin-left: 160px;
+        
+        margin-right: 200px;
     }
 
     .news_article {
