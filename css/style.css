@@ -137,6 +137,11 @@ footer {
     grid-area: we;
 }
 
+#div_mimer {
+    display: flex;
+    justify-content: center;
+}
+
 #img_mimer {
     width: 500px;
     height: auto;
@@ -527,7 +532,7 @@ footer {
     }
 
     #img_mimer {
-        width: 400px;
+        width: 300px;
     }
 
     .img_fb {
