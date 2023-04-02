@@ -125,7 +125,7 @@ footer {
 #child_grid_wrapper1 {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
+    grid-template-areas:
     "we"
     "ne"
     "sh";
